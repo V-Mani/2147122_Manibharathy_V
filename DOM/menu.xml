@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <food>
+        <court_no>01g</court_no>
+      <floor_no>0</floor_no>
+        <r_name>starbucks</r_name>
+        <name>caramel frappuccino</name>
+        <price>295</price>  
+    </food>
+    <food>
+      <court_no>01g</court_no>
+      <floor_no>0</floor_no>
+        <r_name>starbucks</r_name>
+        <name>coffee frappuccino</name>
+        <price>250</price>
+    </food>
+    <food>
+      <court_no>01g</court_no>
+      <floor_no>0</floor_no>
+        <r_name>starbucks</r_name>
+        <name>mocha frappuccino</name>
+        <price>290</price>
+    </food>
+    <food>
+      <court_no>01g</court_no>
+      <floor_no>0</floor_no>
+        <r_name>starbucks</r_name>
+        <name>green tea frappuccino</name>
+        <price>220</price>
+    </food>
+    <food>
+      <court_no>01g</court_no>
+      <floor_no>0</floor_no>
+        <r_name>starbucks</r_name>
+        <name>new york cheese cake</name>
+        <price>305</price>
+    </food>
+    <food>
+        <court_no>13F</court_no>
+        <floor_no>1</floor_no>
+        <r_name>The London Shakes</r_name>
+        <name>Pine 'n' Lemon</name>
+        <price>195</price>  
+    </food>
+    <food>
+        <court_no>13F</court_no>
+        <floor_no>1</floor_no>
+        <r_name>The London Shakes</r_name>
+        <name>Black Current</name>
+        <price>159</price>
+    </food>
+    <food>
+        <court_no>13F</court_no>
+        <floor_no>1</floor_no>
+        <r_name>The London Shakes</r_name>
+        <name>London Nachos</name>
+        <price>140</price>
+    </food>
+    <food>
+        <court_no>13F</court_no>
+        <floor_no>1</floor_no>
+        <r_name>The London Shakes</r_name>
+        <name>Naughty creamy Nachos</name>
+        <price>150</price>
+    </food>
+    <food>
+        <court_no>13F</court_no>
+        <floor_no>1</floor_no>
+        <r_name>The London Shakes</r_name>
+        <name>Tom Soupy Maggi</name>
+        <price>70</price>
+    </food>
+    <food>
+    <court_no>13F</court_no>
+    <floor_no>1</floor_no>
+    <r_name>The London Shakes</r_name>
+    <name>Choco loaded Waffle</name>
+    <price>170</price>
+  </food>
+  </menu>

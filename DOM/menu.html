@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+  
+<head>
+    <title>Reads the XML data using JavaScript</title>
+  
+    <!-- CSS -->
+    <style>
+        table {
+            border-collapse: initial;
+            width: 100%;
+        }
+  
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+  
+        tr:nth-child(even) {
+            background-color: #878f99
+        }
+  
+        th {
+            background-color: #6b5b95;
+            color: white;
+        }
+  
+        .button {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+            border: 4px solid rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.5);
+            color: rgb(255, 255, 255);
+            outline: none;
+            border-radius: 30px;
+            font-size: 30px;
+            width: 500px;
+  
+        }
+  
+        .button:hover {
+            color: black;
+            background: white;
+        }
+    </style>
+  
+    <!--JavaScript-->
+    <script>
+        function loadXMLDoc() {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+  
+                // Request finished and response 
+                // is ready and Status is "OK"
+                if (this.readyState == 4 && this.status == 200) {
+                    menuDetails(this);
+                }
+            };
+  
+            // employee.xml is the external xml file
+            xmlhttp.open("GET", "menu.xml", true);
+            xmlhttp.send();
+        }
+  
+        function menuDetails(xml) {
+            var i;
+            var xmlDoc = xml.responseXML;
+            var table =
+                `<tr><th>Court number</th><th>floor number</th>
+                    <th>Restarunt Name</th><th>Food Name</th>
+                    <th>Price</th>
+                </tr>`;
+                
+            var x = xmlDoc.getElementsByTagName("food");
+            
+  
+            // Start to fetch the data by using TagName 
+            for (i = 0; i < x.length; i++) {
+                table += "<tr><td>" +
+                    x[i].getElementsByTagName("court_no")[0].childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("floor_no")[0].childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("r_name")[0].childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("price")[0].childNodes[0].nodeValue + "</td></tr>" ;  
+            }
+  
+            // Print the xml data in table form
+            document.getElementById("id").innerHTML = table;
+        }
+    </script>
+</head>
+  
+<body>
+    <center>
+        <button type="button" class="button" 
+            onclick="loadXMLDoc()">
+            Get Menu Details
+        </button>
+    </center>
+      
+    <br><br>
+    <table id="id"></table>
+</body>
+  
+</html>

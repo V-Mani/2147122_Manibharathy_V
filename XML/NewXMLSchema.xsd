@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CentralMall">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="FoodCourt">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Restaurant" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="court_no"/>
+                    <xs:element type="xs:integer" name="floor_no"/>
+                    <xs:element type="xs:string" name="r_name"/>
+                    <xs:element type="xs:string" name="type"/>
+                    <xs:element name="menu">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="food" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="court_no"/>
+                                <xs:element type="xs:integer" name="floor_no"/>
+                                <xs:element type="xs:string" name="r_name"/>
+                                <xs:element type="xs:string" name="name"/>
+                                <xs:element type="xs:integer" name="price"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
