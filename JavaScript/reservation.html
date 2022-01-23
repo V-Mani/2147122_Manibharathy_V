@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+
+        section
+        {
+            width: 500px;
+            height: 100%;
+            margin: 100px auto;
+            
+        }
+        div{
+            width: 100%;
+            margin: 15px auto;
+        }
+        label{
+            display: block;
+            padding:20px;
+            font-size: 25px;
+        }
+        input{
+            width: 96%;
+            padding: 10px;
+            border: 1px red;
+            margin-left: 20px;
+            border-radius: 3px;
+        }
+        span
+        {
+            display: block;
+            margin-left: 20px;
+            color: red;
+            font-style: italic;
+        }
+        .button {
+            background-color: rgba(2, 120, 179, 0.856);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 15px auto;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            width: 100%;
+            }
+
+            .button2:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+    </style>
+    
+</head>
+<body>
+    <h1 style="color:rgba(2, 120, 179, 0.856);text-align:center;">RESERVATION</h1>
+   <section>
+       <form action="">
+            <div>
+                <label for="fname">First Name</label>
+                <input type="fname" id="fname" placeholder="First Name">
+                <span></span>
+            </div>
+            <div>
+                <label for="lname">Last Name</label>
+                <input type="lname" id="lname" placeholder="Last Name">
+                <span></span>
+            </div>
+           <div>
+               <label for="email">Email</label>
+               <input type="email" id="email" placeholder="Email-id">
+               <span></span>
+           </div>
+           <div>
+            <label for="number">Phone-Number</label>
+            <input type="number" id="number" placeholder="Phone-Number">
+            <span></span>
+        </div>
+        <div>
+            <label for="number">How many person will you be with?</label>
+            <input type="number" id="count" placeholder="Ex:3">
+            <span></span>
+        </div>
+        <div class="elem-group inlined">
+            <label for="checkin-date">Booking Date</label>
+            <input type="date" id="checkin-date" name="checkin">
+          </div>
+            <input onclick="myFunction()" type="submit" name="submit" value="Submit">    
+            <input type="reset" name="reset" value="Reset">
+            
+       </form>
+       
+   </section> 
+   <a href="../index.html">  
+    <button class="button button2">Home</button>  
+    </a>    
+</body>
+</html>
+<script>
+    var fname= document.getElementById('fname');
+    var lname= document.getElementById('lname');
+    var email=document.getElementById('email');
+    var number=document.getElementById('number');
+    var count=document.getElementById('count');
+    var span=document.getElementsByTagName('span');
+    fname.onkeydown=function()
+    {
+        const regexname1=/^[a-zA-Z ]{2,30}$/;
+        if(regexname1.test(fname.value))
+        {
+            span[0].innerText="Your Name is Valid";
+            span[0].style.color="lime";
+        }
+        else{
+           span[0].innerText="Enter only characters";
+           span[0].style.color="red";
+       }
+    }
+    lname.onkeydown=function()
+    {
+        const regexname2=/^[a-zA-Z ]{2,30}$/;
+        if(regexname2.test(lname.value))
+        {
+            span[1].innerText="Your Name is Valid";
+            span[1].style.color="lime";
+        }
+        else{
+           span[1].innerText="Enter only characters";
+           span[1].style.color="red";
+       }
+    }
+    email.onkeydown=function()
+    {
+       const regex1=/^([a-z0-9\.-]+)@([a-z0-9]+)\.([a-z]{1,8})$/;
+       const regex2= /^([a-z0-9\.-]+)@([a-z0-9]+)\.([a-z]{1,8})(.[a-z]{1,8})$/;
+       if(regex1.test(email.value)||regex2.test(email.value))
+       {
+         span[2].innerText="Your Email is Valid";
+         span[2].style.color="lime";  
+       }
+       else{
+           span[2].innerText="Invalid Email Id";
+           span[2].style.color="red";
+       }
+    }
+       number.onkeydown=function()
+       {
+            const regnum=/^[0-9]{10}$/;
+            if(regnum.test(number.value))
+        {
+            span[3].innerText="Your Number is Valid";
+            span[3].style.color="lime";  
+        }
+        else{
+            span[3].innerText="Invalid Phone Number";
+            span[3].style.color="red";
+        }   
+       }
+       count.onkeydown=function()
+       {
+            const regexcount=/^[0-9]{1}$/;
+            if(regexcount.test(count.value))
+        {
+            span[4].innerText="Your Number is Valid";
+            span[4].style.color="lime";  
+        }
+        else{
+            span[4].innerText="Invalid Number";
+            span[4].style.color="red";
+        }   
+       }
+       function myFunction() {
+        alert("Booked!!");
+}
+</script>
