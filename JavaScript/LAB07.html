@@ -140,9 +140,14 @@
         <button type="button" class="submit" value="Display Cookies" onclick="createcookie1()">Create Cookie 1</button>
         <button type="button" class="submit" value="Display Cookies" onclick="createcookie2()">Create Cookie 2</button>
         <button type="button" class="submit" value="Display Cookies" onclick="deleteCookie1()">Delete Cookies 1</button>
-        <button type="button" class="submit" value="Display Cookies" onclick="deleteCookie2()">Delete Cookies 2</button>s
+        <button type="button" class="submit" value="Display Cookies" onclick="deleteCookie2()">Delete Cookies 2</button>
     </div>
     <script>
+        localStorage.setItem('Name','Manibharathy');
+        console.log(localStorage.getItem('Name'));
+        //localStorage.removeItem('Name');
+
+        sessionStorage.setItem('Lab','Lab 7 - Cookies using JavaScript');
 
         function getCookie()
         {
