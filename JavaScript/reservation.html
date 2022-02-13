@@ -130,20 +130,20 @@
     }
     lname.onkeydown=function()
     {
-        const regexname2=/^[a-zA-Z ]{2,30}$/;
+        const regexname2=/^[a-zA-Z ]{1,30}$/;
         if(regexname2.test(lname.value))
         {
             span[1].innerText="Your Name is Valid";
             span[1].style.color="lime";
         }
         else{
-           span[1].innerText="Enter only characters";
+           span[1].innerText="invalid name";
            span[1].style.color="red";
        }
     }
     email.onkeydown=function()
     {
-        const regex1=/^[a-z0-9](\.?[a-z0-9]){3,}@christuniversity\.in$/;
+        const regex1=/^[a-z0-9](\.?[a-z0-9]){3,}@gmail\.com$/;
        if(regex1.test(email.value))
        {
          span[2].innerText="Your Email is Valid";

@@ -1,0 +1,13 @@
+{
+    "employees":[
+        {"full_name":"Brenda","email":"brenda@gmail.com","phone":"9876543210","designation":"cashier","salary":"20000","dob":"8-10-1995"},
+        {"full_name":"joe","email":"joe@gmail.com","phone":"9876543211","designation":"manager","salary":"35000","dob":"12-1-1991"},
+        {"full_name":"Benjamin","email":"benjamin@gmail.com","phone":"9876543212","designation":"chef","salary":"40000","dob":"8-3-1989"},
+        {"full_name":"Patrick","email":"patrick@gmail.com","phone":"9876543213","designation":"cashier","salary":"20000","dob":"8-5-1994"},
+        {"full_name":"Nancy","email":"nancy@gmail.com","phone":"9876543214","designation":"manager","salary":"37000","dob":"9-7-1990"},
+        {"full_name":"Carol","email":"carol@gmail.com","phone":"9876543215","designation":"chef","salary":"40000","dob":"8-12-1990"},
+        {"full_name":"Frances","email":"frances@gmail.com","phone":"9876543216","designation":"cashier","salary":"20000","dob":"8-6-1995"},
+        {"full_name":"Diana","email":"diana@gmail.com","phone":"9876543217","designation":"manager","salary":"35000","dob":"20-10-1991"},
+        {"full_name":"Mani","email":"mani@gmail.com","phone":"9876543218","designation":"chef","salary":"45000","dob":"8-9-1988"}
+    ]
+}
