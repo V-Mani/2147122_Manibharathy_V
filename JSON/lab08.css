@@ -18,46 +18,7 @@ div>.jumbotron{
 .heading{
     align-items: center;
 }
-.st2{
-      text-align: center;      
-      padding: 10px;
-      margin: 2%;
-      color: #5daaf3;
-      
-  }
- .btn{
-    animation-name: rotate;
-    animation-duration: 0.7s;
-    animation-direction: reverse;
-  }
 
-  @keyframes rotate {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-.navbar{
-    background-color: #ff884d;
-}
-.nav-link {
-    color: #ffece5;
-}
-
-.navbar-brand{
-    color: #ffece5; 
-}
-
-.navbar-brand:hover{
-    color: #575757;
-}
-
-.nav-link:hover{
-    color: #5daaf3;
-}
 
 .jumbotron{
     color: #666666;
@@ -84,16 +45,6 @@ div>.col-sm{
 
 #al{
     margin-top: 30px;
-}
-
-div.card-header{
-    background-color: #ff884d;
-    color: #ffece5;
-}
-
-div.card-body{
-    background-color: #ffece5;
-    color: #5daaf3;
 }
 
 
