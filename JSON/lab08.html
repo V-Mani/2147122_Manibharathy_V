@@ -37,7 +37,7 @@
                       </tr>
                 </thead>
         
-                <tr ng-repeat="employee in names |orderBy:'full_name'|limitTo:rowlimit|filter:search">
+                <tr ng-repeat="employee in names |orderBy:'full_name'|limitTo:rowlimit|filter:search|findEmployee:minSalary:minAge">
                   <td>{{ employee.full_name|uppercase }}</td>
                   <td>{{ employee.email }}</td>
                   <td>{{ employee.phone }}</td>
