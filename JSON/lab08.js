@@ -15,3 +15,40 @@ app.controller('mainCtrl', function($scope,$http){
 
     });
 });
+
+app.filter('findEmployee', function(){
+
+
+	return function (records, minSalary, minAage) {
+
+		if(!records){
+			return;
+		}
+
+	
+		if(!minSalary){
+			minSalary = 0;
+		}
+
+		
+		if(!minAage){
+			minAage = 0;
+		}
+
+
+		var output = [];
+
+
+		angular.forEach(records, function(record){
+
+			if(record.salary > minSalary && record.age > minAage){
+				output.push(record);
+			}
+
+		});
+	   
+	   	
+	    return output;
+
+	  };
+});

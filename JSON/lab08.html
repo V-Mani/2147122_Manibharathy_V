@@ -16,14 +16,11 @@
       <div class="container-fluid">
         <div ng-app="demoLearningTurn">
             <div class="content" ng-controller="mainCtrl">
-            <div class="jumbotron center">
-                <h1>FOOD COURT - EMPLOYEE MANAGEMENT</h1>
-                <br>
-                <label for="name">Your name</label>
-                <input type="text" ng-model="fullName" id="name">
-            </div>
+            <h1 style="text-align: center;">Food Court Employee details</h1>
               <br>rows:<br><input type="=number" step="1" min="0" max="7" placeholder="enter no of rows" ng-model="rowlimit"/><br>
               <br> search:<br><input type="=text" ng-model="search"><br><br>
+              <br>minimum employee salary<br><input type="number" ng-model="minSalary"><br>
+              <br>minimum employee age<br><input type="number" ng-model="minAge"><br>
          
               <h3 style="text-align: center;">Employee List</h3>
         
@@ -36,6 +33,7 @@
                         <th>Designation<br><br><input type="text" ng-model="search.designation" placeholder="search by designation"></th>
                         <th>Salary<br><br><input type="text" ng-model="search.salary" placeholder="search by salary"></th>
                         <th>Date of birth<br><br><input type="text" ng-model="search.dob" placeholder="search by DOB"></th>
+                        <th>Age<br><br><input type="text" ng-model="search.age" placeholder="search by age"></th>
                       </tr>
                 </thead>
         
@@ -46,14 +44,14 @@
                   <td>{{ employee.designation|lowercase }}</td>
                   <td>{{ employee.salary|number:2 }}</td>
                   <td>{{ employee.dob }}</td>
+                  <td>{{ employee.age }}</td>
                 </tr>
         
               </table>
            
               
               <br><br>
-              <p> Edited By :<p>{{ fullName }}</p></p>
-              <p>{{ today | date : "fullDate" }}</p>
+              
             </div>
           </div>
     </div>
