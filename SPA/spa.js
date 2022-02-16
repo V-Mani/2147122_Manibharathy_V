@@ -4,18 +4,18 @@ angular.module('myapp',['ngRoute'])
 {
     $routeProvider.when('/home',
     {
-        templateUrl:'christ/home.html',
+        templateUrl:'mall/home.html',
         controller:'homectrl'}).when('/home/:first/:last',
         {
-            templateUrl:'christ/home.html',
+            templateUrl:'mall/home.html',
             controller:'homectrl'
-    }).when('/course',
+    }).when('/food_court',
     {
-        templateUrl:'christ/course.html',
+        templateUrl:'mall/food_court.html',
         controller:'coursectrl'
     }).when('/staff',
     {
-        templateUrl:'christ/staff.html',
+        templateUrl:'mall/staff.html',
         controller:'staffCtrl'
     }) 
 })
@@ -55,7 +55,7 @@ angular.module('myapp',['ngRoute'])
     $scope.fullName ;
     $scope.today = new Date();
 
-    $http.get('https://2147118joshua.github.io/Staff_DetailsJSON/employee.json')
+    $http.get('https://v-mani.github.io/2147122_Manibharathy_V/JSON/lab09.json')
     .success(function(response)
     {
         $scope.names=response.employees;
