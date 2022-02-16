@@ -1,0 +1,11 @@
+{"employees":[
+    {"full_name":"Kumar","gender":"male","email":"kumar@gmail.com","phone":"+91 8618897671","age":"20","designation":"Manager","salary":"40000","dob":"16/12/1999"},
+    {"full_name":"Leo James","gender":"male","email":"leojames@gmail.com","phone":"+91 7531548920","age":"21","designation":"Chef","salary":"30000","dob":"15/1/1998"},
+    {"full_name":"pradeep","gender":"male","email":"pradeep@gmail.com","phone":"91 8541026973","age":"31","designation":"Cashier","salary":"25000","dob":"21/12/1980"},
+    {"full_name":"Karen","gender":"female","email":"Karen@gmail.com","phone":"+91 9574100863","age":"39","designation":"Manager","salary":"40000","dob":"05/05/1985"},
+    {"full_name":"Erin","gender":"female","email":"Erin@gmail.com","phone":"+91 8845963110","age":"21","designation":"Chef","salary":"30000","dob":"16/11/2000"},
+    {"full_name":"Eliza","gender":"female","email":"Eliza@gmail.com","phone":"+91 9988741250","age":"33","designation":"Cashier","salary":"25000","dob":"16/12/1999"},
+    {"full_name":"Maya","gender":"female","email":"Maya@gmail.com","phone":"+91 8541203997","age":"21","designation":"Chef","salary":"30000","dob":"15/05/1997"},
+    {"full_name":"Mani","gender":"male","email":"mani@gmail.com","phone":"+91 7531548777","age":"22","designation":"Manager","salary":"40000","dob":"11/12/1999"}
+    
+]}

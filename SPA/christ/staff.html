@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMPLOYEE</title>
+  <script src="staff.js"></script>
+</head>
+
+<h1 style="text-align: center;">Staff portal</h1>
+
+<body>
+
+  <!-- Main Content -->
+  <div class="container" ng-app="myapp">
+    <div class="content" ng-controller="staffCtrl">
+        <center><p><h3>Mall Employee - Details</h3></p></center>
+
+      <br>rows:<br><input type="=number" step="1" min="0" max="7" placeholder="enter no of rows" ng-model="rowlimit"/><br>
+      <br> search:<br><input type="=text" placeholder="search for an employe" ng-model="search"><br><br>
+ 
+      <h3>Employee List</h3>
+
+      <table class="table">
+        <tr>
+          <td>Full Name<br><br><input type="text" ng-model="search.full_name" placeholder="search by name"></td>
+          <td>Gender<br><br><input type="text" ng-model="search.gender" placeholder="search by gender"></td>
+          <td>Email<br><br><input type="text" ng-model="search.email" placeholder="search by email"></td>
+          <td>Phone<br><br><input type="text" ng-model="search.phone" placeholder="search by phone"></td>
+          <td>Age<br><br><input type="text" ng-model="search.age" placeholder="search by age"></td>
+          <td>Designation<br><br><input type="text" ng-model="search.designation" placeholder="search by designation"></td>
+          <td>Salary<br><br><input type="text" ng-model="search.salary" placeholder="search by salary"></td>
+          <td>dob<br><br><input type="text" ng-model="search.salary" placeholder="search by DOB"></td>
+        </tr>
+
+        <tr ng-repeat="employee in names |orderBy:'full_name'|limitTo:rowlimit|filter:search">
+          <td>{{ employee.full_name|uppercase }}</td>
+          <td>{{ employee.gender }}</td>
+          <td>{{ employee.email }}</td>
+          <td>{{ employee.phone }}</td>
+          <td>{{ employee.age }}</td>
+          <td>{{ employee.designation|uppercase }}</td>
+          <td>&#8377;{{ employee.salary|number:2 }}</td>
+          <td>{{ employee.dob }}</td>
+        </tr>
+
+      </table>
+   
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+
+</html>
