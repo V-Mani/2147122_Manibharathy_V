@@ -1,0 +1,10 @@
+{"employees":[
+    {"full_name":"Page Cabrera","gender":"male","email":"pagecabrera@imkan.com","phone":"+91 8618897671","age":"40","designation":"secretary","salary":"4227","dob":"16/12/1999"},
+    {"full_name":"Macdonald Rosales","gender":"ale","email":"macdonaldrosales@affluex.com","phone":"+91 7531548920","age":"21","designation":"gen secretary","salary":"8878","dob":"15/1/1998"},
+    {"full_name":"Cash Marsh","gender":"male","email":"cashmarsh@remold.com","phone":"91 8541026973","age":"31","designation":"manager","salary":"9686","dob":"21/12/1980"},
+    {"full_name":"Ofelia Cooley","gender":"female","email":"ofeliacooley@geeketron.com","phone":"+91 9574100863","age":"39","designation":"general manager","salary":"9321","dob":"05/05/1985"},
+    {"full_name":"Erma Chase","gender":"female","email":"ermachase@megall.com","phone":"+91 8845963110","age":"21","designation":"HR MANAGER","salary":"8145","dob":"16/11/2000"},
+    {"full_name":"Maryanne Mullins","gender":"female","email":"maryannemullins@olucore.com","phone":"+91 9988741250","age":"33","designation":"ACCOUNT manager","salary":"9564","dob":"16/12/1999"},
+    {"full_name":"Christina Dickerson","gender":"female","email":"christinadickerson@halap.com","phone":"+91 8541203997","age":"21","designation":"ChIEF EXEVUTIVE","salary":"7966","dob":"15/05/1997"}
+    
+]}
