@@ -6,6 +6,6 @@
     {"full_name":"Devika","gender":"female","email":"devika@megall.com","phone":"+91 8845963110","age":"21","designation":"Cashier","salary":"25000","dob":"16/11/2000"},
     {"full_name":"Rubine","gender":"female","email":"rubine@olucore.com","phone":"+91 9988741250","age":"33","designation":"Chef","salary":"30000","dob":"16/12/1999"},
     {"full_name":"Keerthi","gender":"female","email":"Keerthi@halap.com","phone":"+91 8541203997","age":"21","designation":"Chef","salary":"29000","dob":"15/05/1997"},
-    {"full_name":"Mani bharathy","gender":"male","email":"mani@outlook.com","phone":"91 8541026789","age":"31","designation":"manager","salary":"40000","dob":"21/12/1980"}
+    {"full_name":"Mani","gender":"male","email":"mani@outlook.com","phone":"91 8541026789","age":"31","designation":"manager","salary":"40000","dob":"21/12/1980"}
 
 ]}
